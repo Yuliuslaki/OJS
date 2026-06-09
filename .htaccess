@@ -1,0 +1,19 @@
+# OJS clean URLs
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php/$1 [QSA,L]
+</IfModule>
+
+# Block sensitive files
+<FilesMatch "^(config\.inc\.php|docker-compose\.yml|\.env|composer\.(json|lock)|package(-lock)?\.json)$">
+	Require all denied
+</FilesMatch>
+
+# Block backup and temporary files
+<FilesMatch "\.(bak|old|sql|tar|gz|zip|log)$">
+	Require all denied
+</FilesMatch>

@@ -1,0 +1,39 @@
+name: ojs-sco
+
+services:
+  db:
+    image: mariadb:10.6
+    container_name: ojs-sco-db
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: change_this_password
+      MARIADB_DATABASE: db_jurnal
+      MARIADB_USER: ojs
+      MARIADB_PASSWORD: change_this_password
+      TZ: Asia/Makassar
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --max_allowed_packet=256M
+    volumes:
+      - db-data:/var/lib/mysql
+
+  ojs:
+    image: pkpofficial/ojs:3_5_0-4
+    container_name: ojs-sco-app
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      SERVERNAME: localhost
+      PKP_CLI_INSTALL: "0"
+      TZ: Asia/Makassar
+    volumes:
+      - ./ojs-files:/var/www/files
+      - ./php-ini/custom.ini:/usr/local/etc/php/conf.d/custom.ini:ro
+      - ./ojs-theme/default:/var/www/html/plugins/themes/default
+      - ./config.inc.php:/var/www/html/config.inc.php
+      - ./.htaccess:/var/www/html/.htaccess:ro
+
+volumes:
+  db-data:

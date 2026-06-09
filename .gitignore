@@ -1,0 +1,33 @@
+# Runtime/upload files
+ojs-files/
+
+# Sensitive config
+config.inc.php
+docker-compose.yml
+.env
+
+# Database/backups
+*.sql
+*.sql.gz
+*.tar.gz
+*.zip
+
+# Temporary/backup files
+*.bak
+*.bak-*
+*.old
+*.log
+*.backup-*
+
+# Editor/OS
+.vscode/
+.DS_Store
+
+# Ignore all default OJS theme files
+ojs-theme/default/**
+
+# Track only custom theme files
+!ojs-theme/default/
+!ojs-theme/default/styles/
+!ojs-theme/default/styles/custom.css
+!ojs-theme/default/DefaultThemePlugin.php
