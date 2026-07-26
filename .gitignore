@@ -31,3 +31,10 @@ ojs-theme/default/**
 !ojs-theme/default/styles/
 !ojs-theme/default/styles/custom.css
 !ojs-theme/default/DefaultThemePlugin.php
+config.inc.php.backup*
+docker-compose.yml.backup*
+.gitignore.backup*
+fix-ojs-local.sh
+ojs-public/*
+!ojs-public/index.html
+recover-mariadb-access.sh

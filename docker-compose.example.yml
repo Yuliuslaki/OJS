@@ -6,15 +6,21 @@ services:
     container_name: ojs-sco-db
     restart: unless-stopped
     environment:
-      MARIADB_ROOT_PASSWORD: change_this_password
-      MARIADB_DATABASE: db_jurnal
-      MARIADB_USER: ojs
-      MARIADB_PASSWORD: change_this_password
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
+      MARIADB_DATABASE: ${MARIADB_DATABASE}
+      MARIADB_USER: ${MARIADB_USER}
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD}
       TZ: Asia/Makassar
     command:
       - --character-set-server=utf8mb4
       - --collation-server=utf8mb4_unicode_ci
       - --max_allowed_packet=256M
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
     volumes:
       - db-data:/var/lib/mysql
 
@@ -22,6 +28,9 @@ services:
     image: pkpofficial/ojs:3_5_0-4
     container_name: ojs-sco-app
     restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
     ports:
       - "8080:80"
     environment:
@@ -30,8 +39,10 @@ services:
       TZ: Asia/Makassar
     volumes:
       - ./ojs-files:/var/www/files
+      - ./ojs-public:/var/www/html/public
       - ./php-ini/custom.ini:/usr/local/etc/php/conf.d/custom.ini:ro
-      - ./ojs-theme/default:/var/www/html/plugins/themes/default
+      - ./ojs-theme/default/DefaultThemePlugin.php:/var/www/html/plugins/themes/default/DefaultThemePlugin.php:ro
+      - ./ojs-theme/default/styles/custom.css:/var/www/html/plugins/themes/default/styles/custom.css:ro
       - ./config.inc.php:/var/www/html/config.inc.php
       - ./.htaccess:/var/www/html/.htaccess:ro
 
