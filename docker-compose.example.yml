@@ -38,12 +38,13 @@ services:
       PKP_CLI_INSTALL: "0"
       TZ: Asia/Makassar
     volumes:
+      - ./ojs-runtime-public:/var/www/public
       - ./ojs-files:/var/www/files
       - ./ojs-public:/var/www/html/public
       - ./php-ini/custom.ini:/usr/local/etc/php/conf.d/custom.ini:ro
       - ./ojs-theme/default/DefaultThemePlugin.php:/var/www/html/plugins/themes/default/DefaultThemePlugin.php:ro
       - ./ojs-theme/default/styles/custom.css:/var/www/html/plugins/themes/default/styles/custom.css:ro
-      - ./config.inc.php:/var/www/html/config.inc.php
+      - ./config.inc.php:/var/www/html/config.inc.php:ro
       - ./.htaccess:/var/www/html/.htaccess:ro
 
 volumes:

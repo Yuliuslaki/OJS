@@ -38,3 +38,5 @@ fix-ojs-local.sh
 ojs-public/*
 !ojs-public/index.html
 recover-mariadb-access.sh
+ojs-runtime-public/*
+!ojs-runtime-public/.gitkeep
