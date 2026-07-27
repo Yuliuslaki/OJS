@@ -46,6 +46,8 @@ services:
       - ./ojs-theme/default/styles/custom.css:/var/www/html/plugins/themes/default/styles/custom.css:ro
       - ./config.inc.php:/var/www/html/config.inc.php:ro
       - ./.htaccess:/var/www/html/.htaccess:ro
+      - ./apache/headers.load:/etc/apache2/mods-enabled/headers.load:ro
+      - ./apache/security.conf:/etc/apache2/conf-enabled/zz-ojs-security.conf:ro
 
 volumes:
   db-data:
