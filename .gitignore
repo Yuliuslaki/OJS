@@ -40,3 +40,4 @@ ojs-public/*
 recover-mariadb-access.sh
 ojs-runtime-public/*
 !ojs-runtime-public/.gitkeep
+!ojs-public/.htaccess
