@@ -37,6 +37,14 @@ services:
       SERVERNAME: localhost
       PKP_CLI_INSTALL: "0"
       TZ: Asia/Makassar
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - 'curl -fsS -H "Host: localhost" http://127.0.0.1/SCO/id >/dev/null || exit 1'
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
     volumes:
       - ./ojs-runtime-public:/var/www/public
       - ./ojs-files:/var/www/files
