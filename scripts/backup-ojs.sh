@@ -6,6 +6,8 @@ BACKUP_ROOT="${BACKUP_ROOT:-$HOME/ojs-private-backups}"
 TIMESTAMP="$(date +%Y%m%d-%H%M%S)"
 BACKUP_DIR="$BACKUP_ROOT/full-backup-$TIMESTAMP"
 COOKIE_FILE="$(mktemp)"
+RETENTION_COUNT="${RETENTION_COUNT:-7}"
+LOCK_FILE="${LOCK_FILE:-$BACKUP_ROOT/.backup-ojs.lock}"
 
 OJS_STOPPED=0
 
@@ -19,9 +21,79 @@ cleanup() {
     fi
 }
 
+apply_retention() {
+    local backups=()
+    local index
+    local name
+    local candidate
+
+    mapfile -t backups < <(
+        find "$BACKUP_ROOT" \
+            -mindepth 1 \
+            -maxdepth 1 \
+            -type d \
+            -name 'full-backup-*' \
+            -printf '%f\n' |
+        sort -r
+    )
+
+    echo
+    echo "=== Retensi backup ==="
+    echo "Backup yang dipertahankan: $RETENTION_COUNT"
+    echo "Backup lengkap tersedia  : ${#backups[@]}"
+
+    if [ "${#backups[@]}" -le "$RETENTION_COUNT" ]; then
+        echo "Tidak ada backup lama yang perlu dihapus."
+        return
+    fi
+
+    for ((index = RETENTION_COUNT; index < ${#backups[@]}; index++)); do
+        name="${backups[$index]}"
+
+        if ! [[ "$name" =~ ^full-backup-[0-9]{8}-[0-9]{6}$ ]]; then
+            echo "Dilewati karena nama tidak valid: $name"
+            continue
+        fi
+
+        candidate="$BACKUP_ROOT/$name"
+
+        if [ "$candidate" = "$BACKUP_DIR" ]; then
+            echo "Dilewati karena merupakan backup aktif: $candidate"
+            continue
+        fi
+
+        echo "Menghapus backup lama: $candidate"
+        rm -rf --one-file-system -- "$candidate"
+    done
+}
+
 trap cleanup EXIT
 
 cd "$PROJECT_DIR"
+
+if ! [[ "$RETENTION_COUNT" =~ ^[1-9][0-9]*$ ]]; then
+    echo "GAGAL: RETENTION_COUNT harus berupa angka bulat minimal 1."
+    exit 1
+fi
+
+if ! command -v flock >/dev/null 2>&1; then
+    echo "GAGAL: perintah flock tidak tersedia."
+    exit 1
+fi
+
+mkdir -p "$BACKUP_ROOT"
+chmod 700 "$BACKUP_ROOT"
+
+exec 9>"$LOCK_FILE"
+chmod 600 "$LOCK_FILE"
+
+if ! flock -n 9; then
+    echo "GAGAL: proses backup OJS lain sedang berjalan."
+    echo "Lock file: $LOCK_FILE"
+    exit 1
+fi
+
+echo "Lock backup berhasil diperoleh."
 
 echo "Memeriksa Docker Compose..."
 docker compose config --quiet
@@ -151,6 +223,8 @@ curl -sS \
     grep -q 'OJS HTTP 200'
 
 echo "OJS HTTP 200"
+
+apply_retention
 
 echo
 echo "=== Hasil backup ==="
