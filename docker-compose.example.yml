@@ -5,6 +5,11 @@ services:
     image: mariadb:10.6
     container_name: ojs-sco-db
     restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
     environment:
       MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
       MARIADB_DATABASE: ${MARIADB_DATABASE}
@@ -28,6 +33,11 @@ services:
     image: pkpofficial/ojs:3_5_0-4
     container_name: ojs-sco-app
     restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
     depends_on:
       db:
         condition: service_healthy
