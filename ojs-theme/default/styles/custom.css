@@ -6,85 +6,90 @@
 /* Base */
 html,
 body {
-	min-height: 100%;
+  min-height: 100%;
 }
 
 body {
-	min-height: 100vh !important;
-	background: #f6f8fb !important;
-	color: #111827 !important;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  min-height: 100vh !important;
+  background: #f6f8fb !important;
+  color: #111827 !important;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif !important;
 }
 
 /* Keep footer at bottom when content is short */
 .pkp_structure_page {
-	min-height: 100vh !important;
-	display: flex !important;
-	flex-direction: column !important;
-	background: #f6f8fb !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  background: #f6f8fb !important;
 }
 
 .pkp_structure_content {
-	flex: 1 0 auto !important;
+  flex: 1 0 auto !important;
 }
 
 /* Header */
 .pkp_structure_head {
-	background: #0f172a !important;
-	border-bottom: 4px solid #f97316 !important;
+  background: #0f172a !important;
+  border-bottom: 4px solid #f97316 !important;
 }
 
 .pkp_site_name .is_text,
 .pkp_site_name > a {
-	color: #ffffff !important;
-	font-weight: 700 !important;
-	letter-spacing: -0.3px !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.3px !important;
 }
 
 /* Navigation */
 .pkp_navigation_primary > li > a,
 .pkp_navigation_user > li > a,
 .pkp_search > button {
-	color: #ffffff !important;
-	font-weight: 500 !important;
+  color: #ffffff !important;
+  font-weight: 500 !important;
 }
 
 .pkp_navigation_primary > li > a:hover,
 .pkp_navigation_primary > li > a:focus,
 .pkp_navigation_user > li > a:hover,
 .pkp_navigation_user > li > a:focus {
-	color: #fed7aa !important;
+  color: #fed7aa !important;
 }
 
 /* Main content */
 .pkp_structure_main {
-	background: #ffffff !important;
-	border: 1px solid #e5e7eb !important;
-	border-radius: 12px !important;
-	box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06) !important;
-	padding: 2rem !important;
-	margin-top: 2rem !important;
-	margin-bottom: 2rem !important;
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06) !important;
+  padding: 2rem !important;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
 }
 
 /* Sidebar */
 .pkp_structure_sidebar {
-	background: #ffffff !important;
-	border: 1px solid #e5e7eb !important;
-	border-radius: 12px !important;
-	box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04) !important;
-	padding: 1.5rem !important;
-	margin-top: 2rem !important;
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04) !important;
+  padding: 1.5rem !important;
+  margin-top: 2rem !important;
 }
 
 /* Links */
 a {
-	color: #1d4ed8 !important;
+  color: #1d4ed8 !important;
 }
 
 a:hover,
 a:focus {
-	color: #f97316 !important;
+  color: #f97316 !important;
 }
 
 /* Buttons and galley links */
@@ -92,62 +97,62 @@ a:focus {
 .cmp_form .buttons button,
 .page_login .buttons button,
 .obj_galley_link {
-	border-radius: 8px !important;
-	background: #1d4ed8 !important;
-	border-color: #1d4ed8 !important;
-	color: #ffffff !important;
-	font-weight: 600 !important;
+  border-radius: 8px !important;
+  background: #1d4ed8 !important;
+  border-color: #1d4ed8 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
 }
 
 .cmp_button:hover,
 .cmp_form .buttons button:hover,
 .page_login .buttons button:hover,
 .obj_galley_link:hover {
-	background: #0f172a !important;
-	border-color: #0f172a !important;
-	color: #ffffff !important;
+  background: #0f172a !important;
+  border-color: #0f172a !important;
+  color: #ffffff !important;
 }
 
 /* Footer */
 .pkp_structure_footer_wrapper {
-	margin-top: auto !important;
-	background: #0f172a !important;
-	color: #ffffff !important;
-	border-top: 4px solid #f97316 !important;
+  margin-top: auto !important;
+  background: #0f172a !important;
+  color: #ffffff !important;
+  border-top: 4px solid #f97316 !important;
 }
 
 .pkp_structure_footer {
-	background: transparent !important;
-	color: #ffffff !important;
-	padding-top: 2rem !important;
-	padding-bottom: 2rem !important;
+  background: transparent !important;
+  color: #ffffff !important;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
 }
 
 .pkp_structure_footer a {
-	color: #bfdbfe !important;
+  color: #bfdbfe !important;
 }
 
 .pkp_structure_footer a:hover {
-	color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 .pkp_brand_footer {
-	opacity: 0.7 !important;
+  opacity: 0.7 !important;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-	.pkp_structure_main {
-		border-radius: 0 !important;
-		box-shadow: none !important;
-		padding: 1.25rem !important;
-		margin-top: 1rem !important;
-	}
+  .pkp_structure_main {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 1.25rem !important;
+    margin-top: 1rem !important;
+  }
 
-	.pkp_structure_sidebar {
-		border-radius: 0 !important;
-		box-shadow: none !important;
-	}
+  .pkp_structure_sidebar {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
 }
 
 /* =========================================================
@@ -156,33 +161,33 @@ a:focus {
 
 /* Make header more compact and academic */
 .pkp_head_wrapper {
-	padding-top: 2rem !important;
-	padding-bottom: 0 !important;
+  padding-top: 2rem !important;
+  padding-bottom: 0 !important;
 }
 
 .pkp_site_name_wrapper {
-	padding-top: 0 !important;
-	padding-bottom: 1.25rem !important;
+  padding-top: 0 !important;
+  padding-bottom: 1.25rem !important;
 }
 
 .pkp_site_name {
-	margin: 0 !important;
+  margin: 0 !important;
 }
 
 /* Navigation bar refinement */
 .pkp_navigation_primary_row {
-	background: #1f6f9f !important;
-	border-bottom: 3px solid #f97316 !important;
+  background: #1f6f9f !important;
+  border-bottom: 3px solid #f97316 !important;
 }
 
 .pkp_navigation_primary_wrapper {
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .pkp_navigation_primary > li > a {
-	padding-top: 0.85rem !important;
-	padding-bottom: 0.85rem !important;
+  padding-top: 0.85rem !important;
+  padding-bottom: 0.85rem !important;
 }
 
 /* Search contrast */
@@ -190,48 +195,48 @@ a:focus {
 .pkp_navigation_search_wrapper button,
 .pkp_search button,
 .pkp_search_desktop a {
-	color: #ffffff !important;
-	font-weight: 600 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
 }
 
 .pkp_navigation_search_wrapper a:hover,
 .pkp_navigation_search_wrapper button:hover,
 .pkp_search button:hover,
 .pkp_search_desktop a:hover {
-	color: #fed7aa !important;
+  color: #fed7aa !important;
 }
 
 /* Main area spacing */
 .pkp_structure_content {
-	background: #f6f8fb !important;
+  background: #f6f8fb !important;
 }
 
 .pkp_structure_main {
-	min-height: 160px !important;
+  min-height: 160px !important;
 }
 
 /* Footer refinement */
 .pkp_structure_footer_wrapper {
-	min-height: 160px !important;
-	display: flex !important;
-	align-items: center !important;
+  min-height: 160px !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
 .pkp_structure_footer {
-	width: 100% !important;
-	padding-top: 1.75rem !important;
-	padding-bottom: 1.75rem !important;
+  width: 100% !important;
+  padding-top: 1.75rem !important;
+  padding-bottom: 1.75rem !important;
 }
 
 /* Make OJS/PKP branding less dominant but readable */
 .pkp_brand_footer {
-	opacity: 0.55 !important;
-	filter: invert(1) grayscale(1) brightness(1.5) !important;
+  opacity: 0.55 !important;
+  filter: invert(1) grayscale(1) brightness(1.5) !important;
 }
 
 .pkp_brand_footer img {
-	max-height: 70px !important;
-	width: auto !important;
+  max-height: 70px !important;
+  width: auto !important;
 }
 
 /* =========================================================
@@ -240,118 +245,118 @@ a:focus {
 
 /* Softer academic color palette */
 :root {
-	--academic-navy: #12324f;
-	--academic-blue: #1f5f85;
-	--academic-soft-blue: #eef5f9;
-	--academic-accent: #d66a2c;
-	--academic-bg: #f7f9fb;
-	--academic-border: #dfe7ee;
-	--academic-text: #1f2933;
+  --academic-navy: #12324f;
+  --academic-blue: #1f5f85;
+  --academic-soft-blue: #eef5f9;
+  --academic-accent: #d66a2c;
+  --academic-bg: #f7f9fb;
+  --academic-border: #dfe7ee;
+  --academic-text: #1f2933;
 }
 
 /* Softer page background */
 body,
 .pkp_structure_page,
 .pkp_structure_content {
-	background: var(--academic-bg) !important;
-	color: var(--academic-text) !important;
+  background: var(--academic-bg) !important;
+  color: var(--academic-text) !important;
 }
 
 /* Make content area wider */
 .pkp_structure_content {
-	width: min(100%, 1440px) !important;
-	max-width: 1440px !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-	padding-left: 32px !important;
-	padding-right: 32px !important;
-	border-left: none !important;
-	border-right: none !important;
+  width: min(100%, 1440px) !important;
+  max-width: 1440px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+  border-left: none !important;
+  border-right: none !important;
 }
 
 /* On large screens, content feels more full */
 @media (min-width: 1200px) {
-	.pkp_structure_content {
-		width: calc(100% - 96px) !important;
-	}
+  .pkp_structure_content {
+    width: calc(100% - 96px) !important;
+  }
 }
 
 /* Header: calmer academic navy */
 .pkp_structure_head {
-	background: var(--academic-navy) !important;
-	border-bottom: none !important;
+  background: var(--academic-navy) !important;
+  border-bottom: none !important;
 }
 
 /* Navigation: less contrast, still readable */
 .pkp_navigation_primary_row {
-	background: var(--academic-blue) !important;
-	border-bottom: 2px solid var(--academic-accent) !important;
+  background: var(--academic-blue) !important;
+  border-bottom: 2px solid var(--academic-accent) !important;
 }
 
 /* Reduce strong orange usage */
 .pkp_structure_footer_wrapper {
-	border-top: 2px solid var(--academic-accent) !important;
+  border-top: 2px solid var(--academic-accent) !important;
 }
 
 /* Main card: less floating/stacked feeling */
 .pkp_structure_main {
-	width: 100% !important;
-	background: #ffffff !important;
-	border: 1px solid var(--academic-border) !important;
-	border-radius: 10px !important;
-	box-shadow: 0 4px 16px rgba(18, 50, 79, 0.04) !important;
-	margin-top: 2rem !important;
-	margin-bottom: 2rem !important;
-	padding: 2rem !important;
-	min-height: auto !important;
+  width: 100% !important;
+  background: #ffffff !important;
+  border: 1px solid var(--academic-border) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 16px rgba(18, 50, 79, 0.04) !important;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  padding: 2rem !important;
+  min-height: auto !important;
 }
 
 /* If homepage content is still empty, don't make the empty card too tall */
 .pkp_page_index .pkp_structure_main {
-	min-height: 80px !important;
+  min-height: 80px !important;
 }
 
 /* Footer: softer, not too dominant */
 .pkp_structure_footer_wrapper {
-	background: var(--academic-navy) !important;
-	min-height: 140px !important;
+  background: var(--academic-navy) !important;
+  min-height: 140px !important;
 }
 
 /* Link color more academic */
 a {
-	color: #1f5f85 !important;
+  color: #1f5f85 !important;
 }
 
 a:hover,
 a:focus {
-	color: var(--academic-accent) !important;
+  color: var(--academic-accent) !important;
 }
 
 /* Navigation links stay clean */
 .pkp_navigation_primary > li > a,
 .pkp_navigation_user > li > a,
 .pkp_search > button {
-	color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 .pkp_navigation_primary > li > a:hover,
 .pkp_navigation_primary > li > a:focus {
-	color: #ffe2cc !important;
+  color: #ffe2cc !important;
 }
 
 /* Mobile spacing */
 @media (max-width: 768px) {
-	.pkp_structure_content {
-		width: 100% !important;
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-	}
+  .pkp_structure_content {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 
-	.pkp_structure_main {
-		border-radius: 0 !important;
-		margin-top: 1rem !important;
-		margin-bottom: 1rem !important;
-	}
+  .pkp_structure_main {
+    border-radius: 0 !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
 }
 
 /* =========================================================
@@ -360,23 +365,23 @@ a:focus {
 
 /* Refined academic palette */
 :root {
-	--clean-navy: #14324a;
-	--clean-blue: #2f6f8f;
-	--clean-blue-dark: #244f68;
-	--clean-accent: #c9783a;
-	--clean-bg: #f7f8fa;
-	--clean-surface: #ffffff;
-	--clean-border: #e3e8ee;
-	--clean-text: #1f2933;
-	--clean-muted: #64748b;
+  --clean-navy: #14324a;
+  --clean-blue: #2f6f8f;
+  --clean-blue-dark: #244f68;
+  --clean-accent: #c9783a;
+  --clean-bg: #f7f8fa;
+  --clean-surface: #ffffff;
+  --clean-border: #e3e8ee;
+  --clean-text: #1f2933;
+  --clean-muted: #64748b;
 }
 
 /* Global background */
 body,
 .pkp_structure_page,
 .pkp_structure_content {
-	background: var(--clean-bg) !important;
-	color: var(--clean-text) !important;
+  background: var(--clean-bg) !important;
+  color: var(--clean-text) !important;
 }
 
 /* Remove default OJS vertical layout lines / pseudo backgrounds */
@@ -386,10 +391,10 @@ body,
 .pkp_structure_main:after,
 .pkp_structure_sidebar:before,
 .pkp_structure_sidebar:after {
-	display: none !important;
-	content: none !important;
-	border: 0 !important;
-	background: transparent !important;
+  display: none !important;
+  content: none !important;
+  border: 0 !important;
+  background: transparent !important;
 }
 
 /* Remove old borders that create vertical visual bugs */
@@ -397,36 +402,36 @@ body,
 .pkp_structure_main,
 .pkp_structure_sidebar,
 .pkp_structure_body {
-	border-left: 0 !important;
-	border-right: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
 }
 
 /* Wider but cleaner content wrapper */
 .pkp_structure_content {
-	max-width: 1480px !important;
-	width: calc(100% - 96px) !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-	padding: 36px 0 !important;
+  max-width: 1480px !important;
+  width: calc(100% - 96px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 36px 0 !important;
 }
 
 /* Header: calmer and more academic */
 .pkp_structure_head {
-	background: var(--clean-navy) !important;
-	border-bottom: 0 !important;
+  background: var(--clean-navy) !important;
+  border-bottom: 0 !important;
 }
 
 /* Navigation: same color family as header */
 .pkp_navigation_primary_row {
-	background: var(--clean-blue-dark) !important;
-	border-bottom: 2px solid var(--clean-accent) !important;
+  background: var(--clean-blue-dark) !important;
+  border-bottom: 2px solid var(--clean-accent) !important;
 }
 
 /* Site title */
 .pkp_site_name .is_text,
 .pkp_site_name > a {
-	color: #ffffff !important;
-	font-weight: 700 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
 }
 
 /* Navigation text */
@@ -435,7 +440,7 @@ body,
 .pkp_search > button,
 .pkp_navigation_search_wrapper a,
 .pkp_navigation_search_wrapper button {
-	color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 .pkp_navigation_primary > li > a:hover,
@@ -444,83 +449,83 @@ body,
 .pkp_navigation_user > li > a:focus,
 .pkp_search > button:hover,
 .pkp_navigation_search_wrapper a:hover {
-	color: #f4d2ba !important;
+  color: #f4d2ba !important;
 }
 
 /* Main card refinement */
 .pkp_structure_main {
-	background: var(--clean-surface) !important;
-	border: 1px solid var(--clean-border) !important;
-	border-radius: 10px !important;
-	box-shadow: 0 6px 20px rgba(20, 50, 74, 0.055) !important;
-	margin: 0 auto 2rem auto !important;
-	padding: 2rem !important;
-	width: 100% !important;
+  background: var(--clean-surface) !important;
+  border: 1px solid var(--clean-border) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 6px 20px rgba(20, 50, 74, 0.055) !important;
+  margin: 0 auto 2rem auto !important;
+  padding: 2rem !important;
+  width: 100% !important;
 }
 
 /* Breadcrumb */
 .cmp_breadcrumbs {
-	color: var(--clean-muted) !important;
-	margin-bottom: 1.5rem !important;
+  color: var(--clean-muted) !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .cmp_breadcrumbs a {
-	color: var(--clean-blue-dark) !important;
+  color: var(--clean-blue-dark) !important;
 }
 
 /* Page title */
 .pkp_structure_main h1,
 .page h1 {
-	color: var(--clean-text) !important;
-	font-weight: 700 !important;
-	letter-spacing: -0.3px !important;
+  color: var(--clean-text) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.3px !important;
 }
 
 /* Notification / empty issue message */
 .cmp_notification,
 .cmp_notification.warning,
 .cmp_notification.notice {
-	background: #f1f5f8 !important;
-	border-left: 4px solid var(--clean-blue) !important;
-	color: var(--clean-text) !important;
-	border-radius: 6px !important;
-	padding: 1rem 1.25rem !important;
+  background: #f1f5f8 !important;
+  border-left: 4px solid var(--clean-blue) !important;
+  color: var(--clean-text) !important;
+  border-radius: 6px !important;
+  padding: 1rem 1.25rem !important;
 }
 
 /* Footer softer */
 .pkp_structure_footer_wrapper {
-	background: var(--clean-navy) !important;
-	border-top: 2px solid var(--clean-accent) !important;
-	min-height: 135px !important;
+  background: var(--clean-navy) !important;
+  border-top: 2px solid var(--clean-accent) !important;
+  min-height: 135px !important;
 }
 
 .pkp_brand_footer {
-	opacity: 0.5 !important;
-	filter: invert(1) grayscale(1) brightness(1.55) !important;
+  opacity: 0.5 !important;
+  filter: invert(1) grayscale(1) brightness(1.55) !important;
 }
 
 /* Links */
 a {
-	color: var(--clean-blue-dark) !important;
+  color: var(--clean-blue-dark) !important;
 }
 
 a:hover,
 a:focus {
-	color: var(--clean-accent) !important;
+  color: var(--clean-accent) !important;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-	.pkp_structure_content {
-		width: 100% !important;
-		padding: 20px 0 !important;
-	}
+  .pkp_structure_content {
+    width: 100% !important;
+    padding: 20px 0 !important;
+  }
 
-	.pkp_structure_main {
-		border-radius: 0 !important;
-		border-left: 0 !important;
-		border-right: 0 !important;
-	}
+  .pkp_structure_main {
+    border-radius: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
 }
 
 /* =========================================================
@@ -529,44 +534,44 @@ a:focus {
 
 /* Reduce empty vertical space on short pages */
 .pkp_structure_content {
-	padding-top: 32px !important;
-	padding-bottom: 28px !important;
+  padding-top: 32px !important;
+  padding-bottom: 28px !important;
 }
 
 /* Make main card more document-like */
 .pkp_structure_main {
-	box-shadow: 0 3px 12px rgba(23, 54, 77, 0.035) !important;
-	border-radius: 6px !important;
-	padding: 2rem 2.25rem !important;
+  box-shadow: 0 3px 12px rgba(23, 54, 77, 0.035) !important;
+  border-radius: 6px !important;
+  padding: 2rem 2.25rem !important;
 }
 
 /* Compact footer */
 .pkp_structure_footer_wrapper {
-	min-height: 105px !important;
-	align-items: center !important;
+  min-height: 105px !important;
+  align-items: center !important;
 }
 
 .pkp_structure_footer {
-	padding-top: 1.25rem !important;
-	padding-bottom: 1.25rem !important;
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
 }
 
 /* Make OJS/PKP logo smaller and less dominant */
 .pkp_brand_footer {
-	opacity: 0.42 !important;
+  opacity: 0.42 !important;
 }
 
 .pkp_brand_footer img {
-	max-height: 58px !important;
+  max-height: 58px !important;
 }
 
 /* Slightly compact header */
 .pkp_head_wrapper {
-	padding-top: 1.45rem !important;
+  padding-top: 1.45rem !important;
 }
 
 .pkp_site_name_wrapper {
-	padding-bottom: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 
 /* =========================================================
@@ -575,19 +580,19 @@ a:focus {
 
 /* Make orange/copper only a subtle accent, not main color */
 :root {
-	--ca-accent: #9b7a4f;
-	--ca-accent-soft: #d8c7ad;
-	--ca-line: #d9e2ea;
+  --ca-accent: #9b7a4f;
+  --ca-accent-soft: #d8c7ad;
+  --ca-line: #d9e2ea;
 }
 
 /* Remove strong orange line from navigation */
 .pkp_navigation_primary_row {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
 }
 
 /* Use subtle line above footer instead of orange */
 .pkp_structure_footer_wrapper {
-	border-top: 1px solid #2d5268 !important;
+  border-top: 1px solid #2d5268 !important;
 }
 
 /* Hover uses soft cream/copper, not bright orange */
@@ -597,17 +602,17 @@ a:focus {
 .pkp_navigation_user > li > a:focus,
 .pkp_search > button:hover,
 .pkp_navigation_search_wrapper a:hover {
-	color: var(--ca-accent-soft) !important;
+  color: var(--ca-accent-soft) !important;
 }
 
 /* Links stay academic blue */
 a {
-	color: var(--ca-blue) !important;
+  color: var(--ca-blue) !important;
 }
 
 a:hover,
 a:focus {
-	color: var(--ca-navy) !important;
+  color: var(--ca-navy) !important;
 }
 
 /* Buttons stay blue, no orange */
@@ -615,23 +620,23 @@ a:focus {
 .cmp_form .buttons button,
 .page_login .buttons button,
 .obj_galley_link {
-	background: var(--ca-blue) !important;
-	border-color: var(--ca-blue) !important;
+  background: var(--ca-blue) !important;
+  border-color: var(--ca-blue) !important;
 }
 
 .cmp_button:hover,
 .cmp_form .buttons button:hover,
 .page_login .buttons button:hover,
 .obj_galley_link:hover {
-	background: var(--ca-navy) !important;
-	border-color: var(--ca-navy) !important;
+  background: var(--ca-navy) !important;
+  border-color: var(--ca-navy) !important;
 }
 
 /* Notification uses blue accent, not orange */
 .cmp_notification,
 .cmp_notification.warning,
 .cmp_notification.notice {
-	border-left-color: var(--ca-blue) !important;
+  border-left-color: var(--ca-blue) !important;
 }
 
 /* =========================================================
@@ -640,37 +645,37 @@ a:focus {
 
 /* New palette */
 :root {
-	--ca-primary: #c87433;       /* main orange */
-	--ca-primary-dark: #b56327;  /* darker orange */
-	--ca-primary-soft: #f3e3d5;  /* soft orange hover */
-	--ca-accent-blue: #2b617c;   /* blue accent */
-	--ca-accent-blue-dark: #1f4f67;
-	--ca-bg: #f8fafc;
-	--ca-surface: #ffffff;
-	--ca-border: #e3e8ee;
-	--ca-text: #1f2933;
-	--ca-muted: #64748b;
+  --ca-primary: #c87433; /* main orange */
+  --ca-primary-dark: #b56327; /* darker orange */
+  --ca-primary-soft: #f3e3d5; /* soft orange hover */
+  --ca-accent-blue: #2b617c; /* blue accent */
+  --ca-accent-blue-dark: #1f4f67;
+  --ca-bg: #f8fafc;
+  --ca-surface: #ffffff;
+  --ca-border: #e3e8ee;
+  --ca-text: #1f2933;
+  --ca-muted: #64748b;
 }
 
 /* Header becomes orange */
 .pkp_structure_head {
-	background: var(--ca-primary) !important;
+  background: var(--ca-primary) !important;
 }
 
 /* Top header spacing tetap */
 .pkp_head_wrapper {
-	padding-top: 1.45rem !important;
-	padding-bottom: 0 !important;
+  padding-top: 1.45rem !important;
+  padding-bottom: 0 !important;
 }
 
 .pkp_site_name_wrapper {
-	padding-bottom: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 
 /* Navbar becomes darker orange */
 .pkp_navigation_primary_row {
-	background: var(--ca-primary-dark) !important;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
+  background: var(--ca-primary-dark) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
 }
 
 /* Navigation and search text */
@@ -680,7 +685,7 @@ a:focus {
 .pkp_navigation_search_wrapper button,
 .pkp_search > button,
 .pkp_search_desktop a {
-	color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 /* Hover now soft orange/cream, not blue */
@@ -692,32 +697,32 @@ a:focus {
 .pkp_navigation_search_wrapper button:hover,
 .pkp_search > button:hover,
 .pkp_search_desktop a:hover {
-	color: var(--ca-primary-soft) !important;
+  color: var(--ca-primary-soft) !important;
 }
 
 /* Site title stays white */
 .pkp_site_name .is_text,
 .pkp_site_name > a {
-	color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 /* Blue becomes accent: links */
 a {
-	color: var(--ca-accent-blue) !important;
+  color: var(--ca-accent-blue) !important;
 }
 
 a:hover,
 a:focus {
-	color: var(--ca-accent-blue-dark) !important;
+  color: var(--ca-accent-blue-dark) !important;
 }
 
 /* Breadcrumb links */
 .cmp_breadcrumbs a {
-	color: var(--ca-accent-blue) !important;
+  color: var(--ca-accent-blue) !important;
 }
 
 .cmp_breadcrumbs a:hover {
-	color: var(--ca-accent-blue-dark) !important;
+  color: var(--ca-accent-blue-dark) !important;
 }
 
 /* Buttons use blue as accent */
@@ -725,55 +730,54 @@ a:focus {
 .cmp_form .buttons button,
 .page_login .buttons button,
 .obj_galley_link {
-	background: var(--ca-accent-blue) !important;
-	border-color: var(--ca-accent-blue) !important;
-	color: #ffffff !important;
+  background: var(--ca-accent-blue) !important;
+  border-color: var(--ca-accent-blue) !important;
+  color: #ffffff !important;
 }
 
 .cmp_button:hover,
 .cmp_form .buttons button:hover,
 .page_login .buttons button:hover,
 .obj_galley_link:hover {
-	background: var(--ca-accent-blue-dark) !important;
-	border-color: var(--ca-accent-blue-dark) !important;
-	color: #ffffff !important;
+  background: var(--ca-accent-blue-dark) !important;
+  border-color: var(--ca-accent-blue-dark) !important;
+  color: #ffffff !important;
 }
 
 /* Notifications use blue accent */
 .cmp_notification,
 .cmp_notification.warning,
 .cmp_notification.notice {
-	border-left: 4px solid var(--ca-accent-blue) !important;
-	background: #f1f5f8 !important;
+  border-left: 4px solid var(--ca-accent-blue) !important;
+  background: #f1f5f8 !important;
 }
 
 /* Footer becomes orange family too */
 .pkp_structure_footer_wrapper {
-	background: var(--ca-primary-dark) !important;
-	border-top: 1px solid rgba(255, 255, 255, 0.18) !important;
+  background: var(--ca-primary-dark) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.18) !important;
 }
 
 /* Footer links use soft blue */
 .pkp_structure_footer a {
-	color: #dbeafe !important;
+  color: #dbeafe !important;
 }
 
 .pkp_structure_footer a:hover {
-	color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 /* OJS/PKP logo tetap halus */
 .pkp_brand_footer {
-	opacity: 0.42 !important;
-	filter: invert(1) grayscale(1) brightness(1.45) !important;
+  opacity: 0.42 !important;
+  filter: invert(1) grayscale(1) brightness(1.45) !important;
 }
 
 /* Optional: active/important accents become blue */
 .obj_article_summary,
 .obj_issue_summary {
-	border-bottom: 1px solid var(--ca-border) !important;
+  border-bottom: 1px solid var(--ca-border) !important;
 }
-
 
 /* =========================================================
    Stage 8: Clean light academic header/footer
@@ -781,42 +785,42 @@ a:focus {
    ========================================================= */
 
 :root {
-	--light-bg: #f8fafc;
-	--light-surface: #ffffff;
-	--light-border: #e5e7eb;
-	--light-text: #111827;
-	--light-muted: #64748b;
-	--light-blue: #1f5f85;
-	--light-blue-dark: #17364d;
-	--light-orange: #c66a2e;
+  --light-bg: #f8fafc;
+  --light-surface: #ffffff;
+  --light-border: #e5e7eb;
+  --light-text: #111827;
+  --light-muted: #64748b;
+  --light-blue: #1f5f85;
+  --light-blue-dark: #17364d;
+  --light-orange: #c66a2e;
 }
 
 /* Page background */
 body,
 .pkp_structure_page,
 .pkp_structure_content {
-	background: var(--light-bg) !important;
-	color: var(--light-text) !important;
+  background: var(--light-bg) !important;
+  color: var(--light-text) !important;
 }
 
 /* Header becomes clean white */
 .pkp_structure_head {
-	background: var(--light-surface) !important;
-	border-bottom: 1px solid var(--light-border) !important;
+  background: var(--light-surface) !important;
+  border-bottom: 1px solid var(--light-border) !important;
 }
 
 /* Site title black */
 .pkp_site_name .is_text,
 .pkp_site_name > a {
-	color: var(--light-text) !important;
-	font-weight: 700 !important;
+  color: var(--light-text) !important;
+  font-weight: 700 !important;
 }
 
 /* Navbar white with subtle orange line */
 .pkp_navigation_primary_row {
-	background: var(--light-surface) !important;
-	border-top: 1px solid var(--light-border) !important;
-	border-bottom: 3px solid var(--light-orange) !important;
+  background: var(--light-surface) !important;
+  border-top: 1px solid var(--light-border) !important;
+  border-bottom: 3px solid var(--light-orange) !important;
 }
 
 /* Menu text black */
@@ -826,8 +830,8 @@ body,
 .pkp_navigation_search_wrapper button,
 .pkp_search > button,
 .pkp_search_desktop a {
-	color: var(--light-text) !important;
-	font-weight: 600 !important;
+  color: var(--light-text) !important;
+  font-weight: 600 !important;
 }
 
 /* Menu hover */
@@ -839,81 +843,81 @@ body,
 .pkp_navigation_search_wrapper button:hover,
 .pkp_search > button:hover,
 .pkp_search_desktop a:hover {
-	color: var(--light-orange) !important;
-	background: transparent !important;
+  color: var(--light-orange) !important;
+  background: transparent !important;
 }
 
 /* Links and buttons use academic blue */
 a {
-	color: var(--light-blue) !important;
+  color: var(--light-blue) !important;
 }
 
 a:hover,
 a:focus {
-	color: var(--light-orange) !important;
+  color: var(--light-orange) !important;
 }
 
 .cmp_button,
 .cmp_form .buttons button,
 .page_login .buttons button,
 .obj_galley_link {
-	background: var(--light-blue) !important;
-	border-color: var(--light-blue) !important;
-	color: #ffffff !important;
+  background: var(--light-blue) !important;
+  border-color: var(--light-blue) !important;
+  color: #ffffff !important;
 }
 
 .cmp_button:hover,
 .cmp_form .buttons button:hover,
 .page_login .buttons button:hover,
 .obj_galley_link:hover {
-	background: var(--light-blue-dark) !important;
-	border-color: var(--light-blue-dark) !important;
-	color: #ffffff !important;
+  background: var(--light-blue-dark) !important;
+  border-color: var(--light-blue-dark) !important;
+  color: #ffffff !important;
 }
 
 /* Main content stays clean */
 .pkp_structure_main {
-	background: var(--light-surface) !important;
-	border: 1px solid var(--light-border) !important;
-	color: var(--light-text) !important;
+  background: var(--light-surface) !important;
+  border: 1px solid var(--light-border) !important;
+  color: var(--light-text) !important;
 }
 
 /* Notification uses blue, not orange */
 .cmp_notification,
 .cmp_notification.warning,
 .cmp_notification.notice {
-	background: #f1f5f9 !important;
-	border-left: 4px solid var(--light-blue) !important;
-	color: var(--light-text) !important;
+  background: #f1f5f9 !important;
+  border-left: 4px solid var(--light-blue) !important;
+  color: var(--light-text) !important;
 }
 
 /* Footer becomes light and academic */
 .pkp_structure_footer_wrapper {
-	background: #f1f5f9 !important;
-	border-top: 1px solid var(--light-border) !important;
-	color: var(--light-text) !important;
+  background: #f1f5f9 !important;
+  border-top: 1px solid var(--light-border) !important;
+  color: var(--light-text) !important;
 }
 
 .pkp_structure_footer {
-	color: var(--light-text) !important;
+  color: var(--light-text) !important;
 }
 
 .pkp_structure_footer a {
-	color: var(--light-blue) !important;
+  color: var(--light-blue) !important;
 }
 
 .pkp_structure_footer a:hover {
-	color: var(--light-orange) !important;
+  color: var(--light-orange) !important;
 }
 
 /* OJS/PKP logo readable on light footer */
 .pkp_brand_footer {
-	opacity: 0.7 !important;
-	filter: none !important;
+  opacity: 0.7 !important;
+  filter: none !important;
 }
 
 .pkp_brand_footer img {
-	max-height: 58px !important;
+  max-height: 58px !important;
 }
 
 /* =========================================================
@@ -922,34 +926,34 @@ a:focus {
 
 /* Stronger but still academic accent */
 :root {
-	--light-orange: #b85f27;
-	--light-orange-dark: #9f4f1e;
-	--light-blue: #174f73;
-	--light-blue-dark: #12384f;
-	--light-text: #0f172a;
-	--light-border: #d8dee6;
-	--light-bg: #f6f8fb;
+  --light-orange: #b85f27;
+  --light-orange-dark: #9f4f1e;
+  --light-blue: #174f73;
+  --light-blue-dark: #12384f;
+  --light-text: #0f172a;
+  --light-border: #d8dee6;
+  --light-bg: #f6f8fb;
 }
 
 /* Header text a bit stronger */
 .pkp_site_name .is_text,
 .pkp_site_name > a {
-	color: var(--light-text) !important;
-	font-weight: 800 !important;
-	letter-spacing: -0.35px !important;
+  color: var(--light-text) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.35px !important;
 }
 
 /* Header border cleaner */
 .pkp_structure_head {
-	background: #ffffff !important;
-	border-bottom: 1px solid var(--light-border) !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid var(--light-border) !important;
 }
 
 /* Navigation: stronger separator and more defined menu */
 .pkp_navigation_primary_row {
-	background: #ffffff !important;
-	border-top: 1px solid var(--light-border) !important;
-	border-bottom: 4px solid var(--light-orange) !important;
+  background: #ffffff !important;
+  border-top: 1px solid var(--light-border) !important;
+  border-bottom: 4px solid var(--light-orange) !important;
 }
 
 /* Menu text stronger */
@@ -959,8 +963,8 @@ a:focus {
 .pkp_navigation_search_wrapper button,
 .pkp_search > button,
 .pkp_search_desktop a {
-	color: var(--light-text) !important;
-	font-weight: 700 !important;
+  color: var(--light-text) !important;
+  font-weight: 700 !important;
 }
 
 /* Menu hover with clear academic accent */
@@ -972,74 +976,74 @@ a:focus {
 .pkp_navigation_search_wrapper button:hover,
 .pkp_search > button:hover,
 .pkp_search_desktop a:hover {
-	color: var(--light-orange-dark) !important;
-	background: transparent !important;
+  color: var(--light-orange-dark) !important;
+  background: transparent !important;
 }
 
 /* Links: darker blue, more formal */
 a {
-	color: var(--light-blue) !important;
+  color: var(--light-blue) !important;
 }
 
 a:hover,
 a:focus {
-	color: var(--light-orange-dark) !important;
+  color: var(--light-orange-dark) !important;
 }
 
 /* Main content: slightly stronger border */
 .pkp_structure_main {
-	border: 1px solid var(--light-border) !important;
-	box-shadow: 0 4px 14px rgba(15, 23, 42, 0.045) !important;
+  border: 1px solid var(--light-border) !important;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.045) !important;
 }
 
 /* Notification accent stronger but still blue */
 .cmp_notification,
 .cmp_notification.warning,
 .cmp_notification.notice {
-	border-left-color: var(--light-blue) !important;
+  border-left-color: var(--light-blue) !important;
 }
 
 /* Footer: minimal and clean */
 .pkp_structure_footer_wrapper {
-	background: #f1f5f9 !important;
-	border-top: 1px solid var(--light-border) !important;
-	min-height: 72px !important;
+  background: #f1f5f9 !important;
+  border-top: 1px solid var(--light-border) !important;
+  min-height: 72px !important;
 }
 
 /* Hide default OJS/PKP brand in public footer */
 .pkp_brand_footer {
-	display: none !important;
+  display: none !important;
 }
 
 /* Reduce footer vertical space after hiding OJS brand */
 .pkp_structure_footer {
-	padding-top: 1rem !important;
-	padding-bottom: 1rem !important;
-	min-height: 0 !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  min-height: 0 !important;
 }
 
 /* Login/Register simple refinement */
 .page_login .pkp_structure_main,
 .page_register .pkp_structure_main {
-	max-width: 720px !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
+  max-width: 720px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .page_login form,
 .page_register form {
-	max-width: 460px !important;
-	margin: 1.5rem auto 0 !important;
-	padding: 1.5rem !important;
-	border: 1px solid #e5e7eb !important;
-	border-radius: 10px !important;
-	background: #ffffff !important;
-	box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05) !important;
+  max-width: 460px !important;
+  margin: 1.5rem auto 0 !important;
+  padding: 1.5rem !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 10px !important;
+  background: #ffffff !important;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05) !important;
 }
 
 .page_login h1,
 .page_register h1 {
-	text-align: center !important;
+  text-align: center !important;
 }
 
 .page_login input[type="text"],
@@ -1047,115 +1051,111 @@ a:focus {
 .page_register input[type="text"],
 .page_register input[type="password"],
 .page_register input[type="email"] {
-	width: 100% !important;
-	border-radius: 6px !important;
-	border: 1px solid #cbd5e1 !important;
-	padding: 0.65rem 0.75rem !important;
+  width: 100% !important;
+  border-radius: 6px !important;
+  border: 1px solid #cbd5e1 !important;
+  padding: 0.65rem 0.75rem !important;
 }
 
 .page_login .buttons,
 .page_register .buttons {
-	text-align: center !important;
+  text-align: center !important;
 }
 
 .page_login .buttons button,
 .page_register .buttons button {
-	background: #174f73 !important;
-	border-color: #174f73 !important;
-	border-radius: 6px !important;
+  background: #174f73 !important;
+  border-color: #174f73 !important;
+  border-radius: 6px !important;
 }
-
 
 /* Login/Register small refinement */
 .page_login .pkp_structure_main,
 .page_register .pkp_structure_main {
-	max-width: 900px !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .page_login form,
 .page_register form {
-	max-width: 560px !important;
-	margin: 1rem auto 0 !important;
-	padding: 1.75rem !important;
-	border: 1px solid #e5e7eb !important;
-	border-radius: 10px !important;
-	background: #ffffff !important;
-	box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05) !important;
+  max-width: 560px !important;
+  margin: 1rem auto 0 !important;
+  padding: 1.75rem !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 10px !important;
+  background: #ffffff !important;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05) !important;
 }
 
 .page_register form {
-	max-width: 620px !important;
+  max-width: 620px !important;
 }
 
 .page_login h1,
 .page_register h1 {
-	text-align: center !important;
-	margin-bottom: 0.5rem !important;
+  text-align: center !important;
+  margin-bottom: 0.5rem !important;
 }
 
 /* teks keterangan wajib isi dibuat kecil dan di tengah */
 .page_login .pkp_structure_main > p,
 .page_register .pkp_structure_main > p {
-	text-align: center !important;
-	font-size: 0.9rem !important;
-	color: #64748b !important;
-	margin-bottom: 0.75rem !important;
+  text-align: center !important;
+  font-size: 0.9rem !important;
+  color: #64748b !important;
+  margin-bottom: 0.75rem !important;
 }
-
 
 /* Required field note on login/register */
 .page_login .pkp_structure_main p:has(.req),
 .page_register .pkp_structure_main p:has(.req),
 .page_login .pkp_structure_main > p:first-of-type,
 .page_register .pkp_structure_main > p:first-of-type {
-	max-width: 560px !important;
-	margin: 0.25rem auto 1rem auto !important;
-	font-size: 0.85rem !important;
-	color: #64748b !important;
-	line-height: 1.5 !important;
-	text-align: left !important;
+  max-width: 560px !important;
+  margin: 0.25rem auto 1rem auto !important;
+  font-size: 0.85rem !important;
+  color: #64748b !important;
+  line-height: 1.5 !important;
+  text-align: left !important;
 }
 
 .page_register .pkp_structure_main p:has(.req),
 .page_register .pkp_structure_main > p:first-of-type {
-	max-width: 620px !important;
+  max-width: 620px !important;
 }
-
 
 /* Fix required field note position */
 .page_login > p,
 .page_register > p {
-	max-width: 560px !important;
-	margin: 0.25rem auto 1rem auto !important;
-	font-size: 0.85rem !important;
-	color: #64748b !important;
-	line-height: 1.5 !important;
-	text-align: left !important;
+  max-width: 560px !important;
+  margin: 0.25rem auto 1rem auto !important;
+  font-size: 0.85rem !important;
+  color: #64748b !important;
+  line-height: 1.5 !important;
+  text-align: left !important;
 }
 
 .page_register > p {
-	max-width: 620px !important;
+  max-width: 620px !important;
 }
 
 .page_login > p .required,
 .page_register > p .required {
-	color: #9f4f1e !important;
-	font-weight: 700 !important;
-	text-decoration: none !important;
+  color: #9f4f1e !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
 }
-
 
 /* Center auth buttons on login/register */
 .page_login .buttons,
 .page_register .buttons {
-	display: flex !important;
-	justify-content: center !important;
-	align-items: center !important;
-	gap: 16px !important;
-	text-align: center !important;
-	margin-top: 1.5rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 16px !important;
+  text-align: center !important;
+  margin-top: 1.5rem !important;
 }
 
 /* Card notifikasi error di halaman login */
@@ -1163,77 +1163,74 @@ a:focus {
 .page_login .cmp_notification,
 .page_login .notification,
 .page_login .help {
-    background: #fff1f2 !important;
-    border: 1px solid #fecdd3 !important;
-    border-left: 5px solid #dc2626 !important;
-    color: #991b1b !important;
-    padding: 14px 16px !important;
-    border-radius: 12px !important;
-    margin-bottom: 18px !important;
-    box-shadow: 0 6px 18px rgba(220, 38, 38, 0.08) !important;
-    font-size: 0.95rem !important;
-    font-weight: 600 !important;
+  background: #fff1f2 !important;
+  border: 1px solid #fecdd3 !important;
+  border-left: 5px solid #dc2626 !important;
+  color: #991b1b !important;
+  padding: 14px 16px !important;
+  border-radius: 12px !important;
+  margin-bottom: 18px !important;
+  box-shadow: 0 6px 18px rgba(220, 38, 38, 0.08) !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
 }
 
 /* Jika ada list error */
 .page_login .pkp_form_error ul,
 .page_login .cmp_notification ul {
-    margin: 0 !important;
-    padding-left: 18px !important;
+  margin: 0 !important;
+  padding-left: 18px !important;
 }
-
 
 /* Compact login error notification */
 .page_login .pkp_form_error,
 .page_login .cmp_notification,
 .page_login .notification,
 .page_login .help {
-	padding: 9px 12px !important;
-	border-radius: 8px !important;
-	border-left-width: 4px !important;
-	margin-bottom: 14px !important;
-	font-size: 0.85rem !important;
-	font-weight: 600 !important;
-	box-shadow: none !important;
+  padding: 9px 12px !important;
+  border-radius: 8px !important;
+  border-left-width: 4px !important;
+  margin-bottom: 14px !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
 }
-
 
 /* Compact register error notification */
 .page_register .pkp_form_error,
 .page_register .cmp_notification,
 .page_register .notification {
-	background: #fff1f2 !important;
-	border: 1px solid #fecdd3 !important;
-	border-left: 4px solid #dc2626 !important;
-	color: #991b1b !important;
-	padding: 10px 12px !important;
-	border-radius: 8px !important;
-	margin-bottom: 18px !important;
-	font-size: 0.85rem !important;
-	font-weight: 600 !important;
-	box-shadow: none !important;
+  background: #fff1f2 !important;
+  border: 1px solid #fecdd3 !important;
+  border-left: 4px solid #dc2626 !important;
+  color: #991b1b !important;
+  padding: 10px 12px !important;
+  border-radius: 8px !important;
+  margin-bottom: 18px !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
 }
 
 .page_register .pkp_form_error ul,
 .page_register .cmp_notification ul,
 .page_register .notification ul {
-	margin: 6px 0 0 0 !important;
-	padding-left: 18px !important;
+  margin: 6px 0 0 0 !important;
+  padding-left: 18px !important;
 }
 
 .page_register .pkp_form_error li,
 .page_register .cmp_notification li,
 .page_register .notification li {
-	margin-bottom: 4px !important;
+  margin-bottom: 4px !important;
 }
 
 .page_register .pkp_form_error a,
 .page_register .cmp_notification a,
 .page_register .notification a {
-	color: #991b1b !important;
-	text-decoration: none !important;
+  color: #991b1b !important;
+  text-decoration: none !important;
 }
-
 
 /* Force fix register error box */
 .page_register form > div:first-child,
@@ -1243,16 +1240,16 @@ a:focus {
 .page_register .pkp_form_error,
 .page_register .cmp_notification.error,
 .page_register .cmp_notification.warning {
-	background: #fff1f2 !important;
-	border: 1px solid #fecdd3 !important;
-	border-left: 4px solid #dc2626 !important;
-	border-radius: 8px !important;
-	color: #991b1b !important;
-	padding: 10px 12px !important;
-	margin: 0 0 18px 0 !important;
-	font-size: 0.85rem !important;
-	font-weight: 600 !important;
-	box-shadow: none !important;
+  background: #fff1f2 !important;
+  border: 1px solid #fecdd3 !important;
+  border-left: 4px solid #dc2626 !important;
+  border-radius: 8px !important;
+  color: #991b1b !important;
+  padding: 10px 12px !important;
+  margin: 0 0 18px 0 !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
 }
 
 /* Force text/link inside error box */
@@ -1260,33 +1257,32 @@ a:focus {
 .page_register .pkp_form_error *,
 .page_register .cmp_notification.error *,
 .page_register .cmp_notification.warning * {
-	color: #991b1b !important;
-	background: transparent !important;
-	font-size: 0.85rem !important;
-	line-height: 1.45 !important;
+  color: #991b1b !important;
+  background: transparent !important;
+  font-size: 0.85rem !important;
+  line-height: 1.45 !important;
 }
 
 /* Error list spacing */
 .page_register form > div:first-child ul,
 .page_register .pkp_form_error ul,
 .page_register .cmp_notification ul {
-	margin: 6px 0 0 0 !important;
-	padding-left: 18px !important;
+  margin: 6px 0 0 0 !important;
+  padding-left: 18px !important;
 }
-
 
 /* Final fix: register form error box */
 .page_register #formErrors {
-	background: #fff1f2 !important;
-	border: 1px solid #fecdd3 !important;
-	border-left: 4px solid #dc2626 !important;
-	border-radius: 8px !important;
-	color: #991b1b !important;
-	padding: 10px 12px !important;
-	margin: 0 0 18px 0 !important;
-	font-size: 0.85rem !important;
-	font-weight: 600 !important;
-	box-shadow: none !important;
+  background: #fff1f2 !important;
+  border: 1px solid #fecdd3 !important;
+  border-left: 4px solid #dc2626 !important;
+  border-radius: 8px !important;
+  color: #991b1b !important;
+  padding: 10px 12px !important;
+  margin: 0 0 18px 0 !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
 }
 
 /* Bersihkan style merah bawaan pada isi error */
@@ -1294,42 +1290,41 @@ a:focus {
 .page_register #formErrors .pkp_form_error,
 .page_register #formErrors .cmp_notification,
 .page_register #formErrors .notification {
-	background: transparent !important;
-	color: #991b1b !important;
-	border: 0 !important;
-	box-shadow: none !important;
-	font-size: 0.85rem !important;
-	line-height: 1.45 !important;
+  background: transparent !important;
+  color: #991b1b !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  font-size: 0.85rem !important;
+  line-height: 1.45 !important;
 }
 
 /* Rapikan list error */
 .page_register #formErrors ul {
-	margin: 6px 0 0 0 !important;
-	padding-left: 18px !important;
+  margin: 6px 0 0 0 !important;
+  padding-left: 18px !important;
 }
 
 .page_register #formErrors li {
-	margin-bottom: 4px !important;
+  margin-bottom: 4px !important;
 }
 
 .page_register #formErrors a {
-	color: #991b1b !important;
-	text-decoration: none !important;
+  color: #991b1b !important;
+  text-decoration: none !important;
 }
-
 
 /* Final fix: register form error box */
 .page_register #formErrors {
-	background: #fff1f2 !important;
-	border: 1px solid #fecdd3 !important;
-	border-left: 4px solid #dc2626 !important;
-	border-radius: 8px !important;
-	color: #991b1b !important;
-	padding: 10px 12px !important;
-	margin: 0 0 18px 0 !important;
-	font-size: 0.85rem !important;
-	font-weight: 600 !important;
-	box-shadow: none !important;
+  background: #fff1f2 !important;
+  border: 1px solid #fecdd3 !important;
+  border-left: 4px solid #dc2626 !important;
+  border-radius: 8px !important;
+  color: #991b1b !important;
+  padding: 10px 12px !important;
+  margin: 0 0 18px 0 !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
 }
 
 /* Bersihkan style merah bawaan pada isi error */
@@ -1337,44 +1332,159 @@ a:focus {
 .page_register #formErrors .pkp_form_error,
 .page_register #formErrors .cmp_notification,
 .page_register #formErrors .notification {
-	background: transparent !important;
-	color: #991b1b !important;
-	border: 0 !important;
-	box-shadow: none !important;
-	font-size: 0.85rem !important;
-	line-height: 1.45 !important;
+  background: transparent !important;
+  color: #991b1b !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  font-size: 0.85rem !important;
+  line-height: 1.45 !important;
 }
 
 /* Rapikan list error */
 .page_register #formErrors ul {
-	margin: 6px 0 0 0 !important;
-	padding-left: 18px !important;
+  margin: 6px 0 0 0 !important;
+  padding-left: 18px !important;
 }
 
 .page_register #formErrors li {
-	margin-bottom: 4px !important;
+  margin-bottom: 4px !important;
 }
 
 .page_register #formErrors a {
-	color: #991b1b !important;
-	text-decoration: none !important;
+  color: #991b1b !important;
+  text-decoration: none !important;
 }
-
 
 /* Homepage image size refinement */
 .page_index_journal .homepage_image {
-	text-align: center !important;
-	margin: 0 auto 1.5rem auto !important;
+  text-align: center !important;
+  margin: 0 auto 1.5rem auto !important;
 }
 
 .page_index_journal .homepage_image img {
-	display: block !important;
-	max-width: 100% !important;
-	max-height: 420px !important;
-	width: auto !important;
-	height: auto !important;
-	object-fit: contain !important;
-	margin: 0 auto !important;
-	border-radius: 10px !important;
+  display: block !important;
+  max-width: 100% !important;
+  max-height: 420px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+  border-radius: 10px !important;
 }
 
+/* =========================================================
+   Mobile navigation fix
+   Menampilkan kembali tombol hamburger dan menu responsif
+   ========================================================= */
+
+@media (max-width: 991px) {
+  /* Hilangkan jarak desktop yang terbawa ke tampilan HP */
+  .pkp_head_wrapper {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Tinggi header mobile */
+  .pkp_site_name_wrapper {
+    height: 64px !important;
+    min-height: 64px !important;
+    padding: 0 !important;
+  }
+
+  /* Beri ruang di sebelah kiri untuk tombol hamburger */
+  .pkp_site_name {
+    left: 64px !important;
+    right: 0 !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .pkp_site_name .is_text {
+    line-height: 64px !important;
+    color: #111827 !important;
+  }
+
+  /* Tombol hamburger */
+  .pkp_site_nav_toggle {
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 64px !important;
+    height: 64px !important;
+    background: #ffffff !important;
+    border: 0 !important;
+    border-right: 1px solid #d8dee6 !important;
+    box-shadow: none !important;
+    z-index: 10001 !important;
+    cursor: pointer !important;
+  }
+
+  /* Garis bawah ikon hamburger */
+  .pkp_site_nav_toggle > span {
+    border-bottom: 3px solid #111827 !important;
+  }
+
+  /* Dua garis lainnya */
+  .pkp_site_nav_toggle > span::before,
+  .pkp_site_nav_toggle > span::after {
+    background: #111827 !important;
+  }
+
+  .pkp_site_nav_toggle:hover {
+    background: #f1f5f9 !important;
+  }
+
+  .pkp_site_nav_toggle:focus {
+    outline: 2px solid #1f5f85 !important;
+    outline-offset: -2px !important;
+  }
+
+  /* Saat berubah menjadi ikon X */
+  .pkp_site_nav_toggle--transform > span {
+    border-bottom: 0 !important;
+  }
+
+  /* Panel menu mobile */
+  .pkp_site_nav_menu {
+    top: 64px !important;
+    left: 0 !important;
+    width: 100% !important;
+    padding: 16px 20px !important;
+    background: #ffffff !important;
+    border-top: 1px solid #d8dee6 !important;
+    border-bottom: 1px solid #d8dee6 !important;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12) !important;
+    z-index: 10000 !important;
+  }
+
+  /* Warna teks pada menu mobile */
+  .pkp_site_nav_menu a,
+  .pkp_site_nav_menu button,
+  .pkp_navigation_primary > li > a,
+  .pkp_navigation_user > li > a,
+  .pkp_navigation_search_wrapper a,
+  .pkp_navigation_search_wrapper button {
+    color: #111827 !important;
+  }
+
+  .pkp_site_nav_menu a:hover,
+  .pkp_site_nav_menu a:focus,
+  .pkp_site_nav_menu button:hover,
+  .pkp_site_nav_menu button:focus {
+    color: #1f5f85 !important;
+    background: transparent !important;
+  }
+
+  /* Pemisah bagian akun dan pencarian */
+  .pkp_navigation_user.pkp_navigation_user,
+  .pkp_navigation_search_wrapper {
+    border-top-color: #d8dee6 !important;
+  }
+
+  /* Navbar desktop tidak memberi warna aneh pada mobile */
+  .pkp_navigation_primary_row {
+    background: #ffffff !important;
+    border-top: 0 !important;
+  }
+}

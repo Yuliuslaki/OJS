@@ -1,0 +1,459 @@
+/**
+ * ScientiCO Admin Mobile v1.3.0
+ *
+ * Mengubah sidebar backend OJS menjadi drawer hamburger
+ * pada perangkat HP dan tablet kecil.
+ */
+
+:root {
+  --scientico-admin-header-height: 3rem;
+  --scientico-admin-drawer-width: min(86vw, 22rem);
+}
+
+/* Mencegah konten backend memaksa halaman melebar */
+.app,
+.app__body,
+.app__main,
+.app__page {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+/* Tombol dan backdrop tidak tampil pada desktop */
+.scienticoAdminNavToggle,
+.scienticoAdminNavBackdrop {
+  display: none;
+}
+
+/* =========================================================
+   HP dan tablet kecil
+   ========================================================= */
+
+@media screen and (max-width: 991px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0 !important;
+    overflow-x: hidden;
+  }
+
+  body.scienticoAdminNavOpen {
+    overflow: hidden !important;
+  }
+
+  .app {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  /* =======================================================
+     Header backend
+     ======================================================= */
+
+  .app__header {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    z-index: 10020 !important;
+  }
+
+  /* Memberikan ruang untuk hamburger */
+  .app__contextTitle {
+    min-width: 0 !important;
+    max-width: calc(100vw - 9rem) !important;
+    margin-left: 3.25rem !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  /* =======================================================
+     Tombol hamburger
+     ======================================================= */
+
+  .scienticoAdminNavToggle {
+    display: inline-flex !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 0.65rem !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 2.75rem !important;
+    height: 2.75rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: translateY(-50%) !important;
+    border: 0 !important;
+    border-radius: 0.375rem !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+    cursor: pointer !important;
+    z-index: 10030 !important;
+  }
+
+  .scienticoAdminNavToggle:hover,
+  .scienticoAdminNavToggle:focus {
+    background: rgba(255, 255, 255, 0.14) !important;
+  }
+
+  .scienticoAdminNavToggle:focus-visible {
+    outline: 2px solid #ffffff !important;
+    outline-offset: 2px !important;
+  }
+
+  .scienticoAdminNavToggle__text {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
+  .scienticoAdminNavToggle__icon {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    width: 1.5rem !important;
+    height: 1.125rem !important;
+  }
+
+  .scienticoAdminNavToggle__icon > span {
+    display: block !important;
+    width: 100% !important;
+    height: 2px !important;
+    border-radius: 999px !important;
+    background: currentColor !important;
+    transition:
+      transform 180ms ease,
+      opacity 180ms ease !important;
+  }
+
+  body.scienticoAdminNavOpen .scienticoAdminNavToggle__icon > span:first-child {
+    transform: translateY(8px) rotate(45deg) !important;
+  }
+
+  body.scienticoAdminNavOpen
+    .scienticoAdminNavToggle__icon
+    > span:nth-child(2) {
+    opacity: 0 !important;
+  }
+
+  body.scienticoAdminNavOpen .scienticoAdminNavToggle__icon > span:last-child {
+    transform: translateY(-8px) rotate(-45deg) !important;
+  }
+
+  /* =======================================================
+     Struktur konten utama
+     ======================================================= */
+
+  .app__body {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .app__main {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    left: auto !important;
+    right: auto !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .app__page,
+  .app__page.width,
+  .app__page.width--narrow,
+  .app__page.width--normal,
+  .app__page.width--wide,
+  .app__page.width--full {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 1rem !important;
+    box-sizing: border-box !important;
+  }
+
+  /* =======================================================
+     Sidebar sebagai drawer
+     ======================================================= */
+
+  .scienticoAdminMobileNav {
+    display: flex !important;
+    position: fixed !important;
+    top: var(--scientico-admin-header-height) !important;
+    left: 0 !important;
+    right: auto !important;
+    bottom: 0 !important;
+
+    flex-direction: column !important;
+    flex: none !important;
+
+    width: var(--scientico-admin-drawer-width) !important;
+    max-width: var(--scientico-admin-drawer-width) !important;
+    min-width: 0 !important;
+
+    height: calc(100dvh - var(--scientico-admin-header-height)) !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: translateX(-105%) !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+
+    background: #ffffff !important;
+    border: 0 !important;
+    border-right: 1px solid #cbd5e1 !important;
+    border-bottom: 0 !important;
+    box-shadow: 8px 0 24px rgba(15, 23, 42, 0.2) !important;
+
+    box-sizing: border-box !important;
+    transition:
+      transform 220ms ease,
+      visibility 220ms ease !important;
+
+    will-change: transform;
+    z-index: 10010 !important;
+  }
+
+  body.scienticoAdminNavOpen .scienticoAdminMobileNav {
+    transform: translateX(0) !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  /* Seluruh isi drawer mengikuti lebarnya */
+  .scienticoAdminMobileNav,
+  .scienticoAdminMobileNav > *,
+  .scienticoAdminMobileNav nav,
+  .scienticoAdminMobileNav ul,
+  .scienticoAdminMobileNav li {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .scienticoAdminMobileNav a,
+  .scienticoAdminMobileNav button {
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    box-sizing: border-box !important;
+  }
+
+  /* =======================================================
+     Backdrop drawer
+     ======================================================= */
+
+  .scienticoAdminNavBackdrop {
+    display: block !important;
+    position: fixed !important;
+    top: var(--scientico-admin-header-height) !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+    background: rgba(15, 23, 42, 0.48) !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+
+    transition:
+      opacity 220ms ease,
+      visibility 220ms ease !important;
+
+    z-index: 10000 !important;
+  }
+
+  body.scienticoAdminNavOpen .scienticoAdminNavBackdrop {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  /* =======================================================
+     Isi halaman responsif
+     ======================================================= */
+
+  .app__breadcrumbs,
+  .app__breadcrumbs ol {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .app__breadcrumbs ol {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.25rem !important;
+  }
+
+  .app__page h1,
+  .app__page h2,
+  .app__page h3,
+  .app__page h4,
+  .pkpPageTitle,
+  .pkpPageHeader__title {
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+
+  .pkpListPanel,
+  .pkpListPanel__body,
+  .pkpListPanel__content,
+  .pkpForm,
+  .pkpFormPage,
+  .pkpFormGroup,
+  .pkpFormField,
+  .pkpPageHeader,
+  .pkpPageContent,
+  .pkpTabs,
+  .pkpTab,
+  .pkpModal {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  input,
+  select,
+  textarea {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .pkpPageHeader__actions,
+  .pkpFormPage__actions,
+  .pkpButtonGroup,
+  .pkpButtonGroup--primary,
+  .pkpListPanel__actions {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+    max-width: 100% !important;
+  }
+
+  /* Tabel digeser di dalam panel, bukan memperlebar halaman */
+  .pkpTable,
+  .pkpTable__wrapper,
+  .pkpListPanel__table,
+  .grid,
+  .grid_wrapper,
+  [id$="GridContainer"] {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box !important;
+  }
+
+  .pkpTable table,
+  .pkpListPanel table,
+  .grid table,
+  .grid_wrapper table {
+    width: max-content !important;
+    min-width: 100% !important;
+    max-width: none !important;
+  }
+
+  .submissionsList,
+  .submissionsList__body,
+  .submissionsList__item,
+  .submissionList,
+  .submissionList__item {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .pkpModal__panel,
+  .pkpModal__content,
+  .modal,
+  .modal-dialog,
+  .modal-content {
+    max-width: calc(100vw - 2rem) !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* =========================================================
+   HP sangat kecil
+   ========================================================= */
+
+@media screen and (max-width: 480px) {
+  :root {
+    --scientico-admin-drawer-width: min(90vw, 21rem);
+  }
+
+  .app__page,
+  .app__page.width,
+  .app__page.width--narrow,
+  .app__page.width--normal,
+  .app__page.width--wide,
+  .app__page.width--full {
+    padding: 0.75rem !important;
+  }
+
+  .app__page h1,
+  .pkpPageTitle,
+  .pkpPageHeader__title {
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .pkpButton,
+  button,
+  input[type="submit"],
+  input[type="button"] {
+    max-width: 100% !important;
+    white-space: normal !important;
+  }
+}
+
+/* Menghormati pengaturan pengurangan animasi */
+@media (prefers-reduced-motion: reduce) {
+  .scienticoAdminMobileNav,
+  .scienticoAdminNavBackdrop,
+  .scienticoAdminNavToggle__icon > span {
+    transition: none !important;
+  }
+}

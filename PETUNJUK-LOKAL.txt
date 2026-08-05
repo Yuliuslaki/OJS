@@ -1,0 +1,21 @@
+SCIENTICO LOCAL — PETUNJUK SINGKAT
+
+Folder tujuan:
+  \\wsl.localhost\Ubuntu\home\acer\ojs-sco-local
+
+Urutan penggunaan:
+  1. Jalankan EXTRACT-SCO.cmd dari paket ekstraktor.
+  2. Buka folder ojs-sco-local di VS Code dengan mode WSL: Ubuntu.
+  3. Periksa struktur proyek.
+  4. Jalankan FIRST-SETUP-SCO.cmd satu kali.
+  5. Gunakan START-SCO.cmd, STOP-SCO.cmd, dan STATUS-SCO.cmd untuk penggunaan berikutnya.
+
+Alamat ScientiCO:
+  http://localhost:8081/SCO/id
+
+Catatan keamanan:
+  Paket proyek memuat .env, config.inc.php, password database, dan app_key.
+  Jangan unggah paket atau file rahasia tersebut ke GitHub dan jangan membagikannya.
+
+Folder lama tidak dihapus oleh ekstraktor. Bila folder ojs-sco-local sudah ada,
+ekstraktor akan mengganti namanya menjadi folder cadangan bertanggal.

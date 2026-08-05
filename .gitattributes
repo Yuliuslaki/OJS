@@ -1,0 +1,19 @@
+# Normalisasi semua file teks di repository
+* text=auto eol=lf
+
+# Script Windows harus menggunakan CRLF
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Petunjuk lokal dibuka langsung di Windows
+PETUNJUK-LOKAL.txt text eol=crlf
+
+# File biner
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.zip binary
+*.gz binary
+*.tar binary

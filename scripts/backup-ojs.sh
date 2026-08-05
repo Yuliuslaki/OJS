@@ -28,12 +28,7 @@ apply_retention() {
     local candidate
 
     mapfile -t backups < <(
-        find "$BACKUP_ROOT" \
-            -mindepth 1 \
-            -maxdepth 1 \
-            -type d \
-            -name 'full-backup-*' \
-            -printf '%f\n' |
+        find "$BACKUP_ROOT"             -mindepth 1             -maxdepth 1             -type d             -name 'full-backup-*'             -printf '%f\n' |
         sort -r
     )
 

@@ -1,0 +1,107 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OJS 3.5.0-4\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "invitation.header"
+msgstr "Undangan"
+
+msgid "invitation.inviteToRole.btn"
+msgstr "Undang ke Peran"
+
+msgid "invitation.tableHeader.name"
+msgstr "Nama"
+
+msgid "invitation.step"
+msgstr "LANGKAH"
+
+msgid "invitation.wizard.pageTitle"
+msgstr "Undang Pengguna untuk Mengambil Peran"
+
+msgid "invitation.role.selectRole"
+msgstr "Pilih Peran Baru"
+
+msgid "invitation.role.dateStart"
+msgstr "Tanggal Mulai"
+
+msgid "invitation.role.dateEnd"
+msgstr "Tanggal Berakhir"
+
+msgid "invitation.role.addRole.button"
+msgstr "Tambahkan Peran Lain"
+
+msgid "invitation.role.removeRole.button"
+msgstr "Hapus Peran"
+
+msgid "invitation.role.modifyRole.button"
+msgstr "Ubah Peran"
+
+msgid "invitation.management.options"
+msgstr "Pilihan Pengelolaan Undangan"
+
+msgid "invitation.cancelInvite.actionName"
+msgstr "Batalkan Undangan"
+
+msgid "invitation.cancelInvite.title"
+msgstr "Batalkan Undangan"
+
+msgid "userInvitation.searchUser.stepName"
+msgstr "Cari Pengguna"
+
+msgid "userInvitation.searchUser.nextButtonLabel"
+msgstr "Cari Pengguna"
+
+msgid "userInvitation.enterDetails.stepName"
+msgstr "Masukkan Detail"
+
+msgid "userInvitation.enterDetails.nextButtonLabel"
+msgstr "Simpan dan Lanjutkan"
+
+msgid "userInvitation.roleTable.role"
+msgstr "Peran"
+
+msgid "userInvitation.roleTable.startDate"
+msgstr "Tanggal Mulai"
+
+msgid "userInvitation.roleTable.endDate"
+msgstr "Tanggal Berakhir"
+
+msgid "userInvitation.sendMail.stepName"
+msgstr "Tinjau dan Undang ke Peran"
+
+msgid "userInvitation.sendMail.nextButtonLabel"
+msgstr "Undang Pengguna ke Peran"
+
+msgid "userInvitation.modal.title"
+msgstr "Undangan Terkirim"
+
+msgid "userInvitation.modal.button"
+msgstr "Lihat Semua Pengguna"
+
+msgid "userInvitation.status.invited"
+msgstr "Diundang {$date}"
+
+msgid "userInvitation.edit.title"
+msgstr "Ubah Undangan"
+
+msgid "userInvitation.cancel.goBack"
+msgstr "Kembali"
+
+msgid "invitation.wizard.pageTitleDescription"
+msgstr "Ikuti langkah-langkah berikut untuk mengundang pengguna ke suatu peran."
+
+msgid "userInvitation.searchUser.stepLabel"
+msgstr "{$step} - Cari Pengguna"
+
+msgid "userInvitation.searchUser.stepDescription"
+msgstr "Jika pengguna belum terdaftar, Anda dapat mengundangnya untuk mengambil peran. Jika pengguna sudah terdaftar, Anda dapat melihat informasinya dan mengundangnya ke peran tambahan."
+
+msgid "userInvitation.searchField"
+msgstr "Cari pengguna berdasarkan alamat email, nama pengguna, atau ORCID iD. Masukkan satu data untuk memulai."
+
+msgid "userInvitation.searchField.description"
+msgstr "Contoh: aeinstein@example.com, aeinstein, atau 0000-0002-1825-0097"

@@ -1,0 +1,17 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OJS 3.5.0-4\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "userAccess.tableHeader.startDate"
+msgstr "Tanggal Mulai"
+
+msgid "userAccess.tableHeader.name"
+msgstr "Nama"
+
+msgid "userAccess.search"
+msgstr "Cari berdasarkan nama pengguna, peran, atau afiliasi"

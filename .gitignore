@@ -1,43 +1,111 @@
-# Runtime/upload files
-ojs-files/
+# ==========================================================
+# ScientiCO OJS — Git Ignore
+# Repository publik: jangan simpan rahasia atau data runtime
+# ==========================================================
 
-# Sensitive config
-config.inc.php
-docker-compose.yml
+# ----------------------------------------------------------
+# Konfigurasi sensitif
+# ----------------------------------------------------------
 .env
+.env.*
+!.env.example
 
-# Database/backups
+config.inc.php
+config.inc.php.*
+!config.example.inc.php
+
+docker-compose.yml
+docker-compose.yml.*
+!docker-compose.example.yml
+
+# ----------------------------------------------------------
+# Database, backup, dan paket pemulihan
+# ----------------------------------------------------------
+restore/
+
 *.sql
 *.sql.gz
+*.dump
+*.tar
 *.tar.gz
+*.tgz
 *.zip
+*.7z
 
-# Temporary/backup files
 *.bak
 *.bak-*
-*.old
-*.log
+*.backup
 *.backup-*
+*.old
 
-# Editor/OS
-.vscode/
-.DS_Store
+# Dokumen atau paket privat
+PETUNJUK-PRIVATE.txt
 
-# Ignore all default OJS theme files
-ojs-theme/default/**
+# ----------------------------------------------------------
+# Data OJS dan file unggahan pengguna
+# ----------------------------------------------------------
+ojs-files/
 
-# Track only custom theme files
-!ojs-theme/default/
-!ojs-theme/default/styles/
-!ojs-theme/default/styles/custom.css
-!ojs-theme/default/DefaultThemePlugin.php
-config.inc.php.backup*
-docker-compose.yml.backup*
-.gitignore.backup*
-fix-ojs-local.sh
 ojs-public/*
+!ojs-public/.htaccess
 !ojs-public/index.html
-recover-mariadb-access.sh
+
 ojs-runtime-public/*
 !ojs-runtime-public/.gitkeep
-!ojs-public/.htaccess
+
+# ----------------------------------------------------------
+# Tema bawaan
+# Hanya simpan dua file kustomisasi yang digunakan
+# ----------------------------------------------------------
+ojs-theme/default/**
+
+!ojs-theme/default/
+!ojs-theme/default/DefaultThemePlugin.php
+
+!ojs-theme/default/styles/
+!ojs-theme/default/styles/custom.css
+
+# ----------------------------------------------------------
+# Cache, log, dan file sementara
+# ----------------------------------------------------------
+cache/
+tmp/
+temp/
+
+*.log
+*.pid
+*.swp
+*.swo
+*~
+
+# ----------------------------------------------------------
+# Editor dan helper lokal
+# ----------------------------------------------------------
+.vscode/
+.ide-stubs/
+.idea/
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# File khusus Windows yang tidak perlu masuk repository
+NUL
+
+# ----------------------------------------------------------
+# Skrip pemulihan sementara yang tidak lagi digunakan
+# ----------------------------------------------------------
+fix-ojs-local.sh
+recover-mariadb-access.sh
+
+# ----------------------------------------------------------
+# File cadangan GitIgnore
+# ----------------------------------------------------------
+.gitignore.backup*
+
+# Dokumen dan pengaturan lokal privat
+PETUNJUK-PRIVAT.txt
+SUMBER-BACKUP.txt
+settings.json
+
+# Salinan dokumentasi lokal

@@ -1,15 +1,10 @@
-name: ojs-sco
+name: ojs-sco-local
 
 services:
   db:
     image: mariadb:10.6
-    container_name: ojs-sco-db
+    container_name: ojs-sco-local-db
     restart: unless-stopped
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
-        max-file: "3"
     environment:
       MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
       MARIADB_DATABASE: ${MARIADB_DATABASE}
@@ -31,18 +26,13 @@ services:
 
   ojs:
     image: pkpofficial/ojs:3_5_0-4
-    container_name: ojs-sco-app
+    container_name: ojs-sco-local-app
     restart: unless-stopped
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
-        max-file: "3"
     depends_on:
       db:
         condition: service_healthy
     ports:
-      - "127.0.0.1:8080:80"
+      - "127.0.0.1:8081:80"
     environment:
       SERVERNAME: localhost
       PKP_CLI_INSTALL: "0"
