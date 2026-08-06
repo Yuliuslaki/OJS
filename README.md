@@ -472,13 +472,13 @@ Script pengaturan awal dapat digunakan untuk:
 
 ## Melihat Status Container
 
-### Linux atau WSL
+### Melihat status di Linux atau WSL
 
 ```bash
 ./scripts/status-local.sh
 ```
 
-### Windows
+### Melihat status di Windows
 
 ```text
 STATUS-SCO.cmd
@@ -508,13 +508,13 @@ healthy
 
 ## Menghentikan OJS
 
-### Linux atau WSL
+### Menghentikan OJS di Linux atau WSL
 
 ```bash
 ./scripts/stop-local.sh
 ```
 
-### Windows
+### Menghentikan OJS di Windows
 
 ```text
 STOP-SCO.cmd
