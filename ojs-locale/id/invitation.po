@@ -1,0 +1,25 @@
+msgid ""
+msgstr ""
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+msgid "userInvitation.enterDetails.stepDescription"
+msgstr "Anda dapat mengundang pengguna untuk mengambil peran di OJS."
+
+msgid "userInvitation.search.userNotFound"
+msgstr "Pengguna belum memiliki peran di jurnal ini."
+
+msgid "userInvitation.search.userFound"
+msgstr "Pengguna sudah terdaftar di jurnal ini."
+
+msgid "invitation.role.masthead"
+msgstr "Masthead Jurnal"
+
+msgid "userInvitation.roleTable.journalMasthead"
+msgstr "Masthead Jurnal"
+
+msgid "userInvitation.sendMail.stepDescription"
+msgstr "Kirim surel kepada pengguna untuk memberi tahu tentang undangan, langkah selanjutnya, kebijakan privasi jurnal, dan verifikasi ORCID."

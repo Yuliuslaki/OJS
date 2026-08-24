@@ -105,3 +105,30 @@ msgstr "Cari pengguna berdasarkan alamat email, nama pengguna, atau ORCID iD. Ma
 
 msgid "userInvitation.searchField.description"
 msgstr "Contoh: aeinstein@example.com, aeinstein, atau 0000-0002-1825-0097"
+
+msgid "userInvitation.enterDetails.stepLabel"
+msgstr "{$step} - Masukkan detail dan undang ke peran"
+
+msgid "invitation.email.description"
+msgstr "contoh: aeinstein@example.com"
+
+msgid "invitation.givenName.description"
+msgstr "Jika Anda mengetahui nama depan pengguna, Anda dapat memasukkannya. Informasi ini dapat diubah oleh pengguna."
+
+msgid "invitation.familyName.description"
+msgstr "Jika Anda mengetahui nama belakang pengguna, Anda dapat memasukkannya. Informasi ini dapat diubah oleh pengguna."
+
+msgid "userInvitation.cancel.message"
+msgstr "Apakah Anda yakin ingin membatalkan undangan ini?"
+
+msgid "invitation.masthead.show"
+msgstr "Tampilkan di Masthead Jurnal"
+
+msgid "invitation.masthead.hidden"
+msgstr "Jangan tampilkan di Masthead Jurnal"
+
+msgid "userInvitation.sendMail.stepLabel"
+msgstr "{$step} - Tinjau dan sesuaikan surel undangan"
+
+msgid "invitation.cancelInvite.message"
+msgstr "Membatalkan undangan yang dikirim kepada {$givenName} {$familyName} akan menonaktifkan tautan penerimaan yang dikirim melalui surel. Berikut detail undangannya:"
