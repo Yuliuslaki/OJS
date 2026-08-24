@@ -23,3 +23,6 @@ msgstr "Masthead Jurnal"
 
 msgid "userInvitation.sendMail.stepDescription"
 msgstr "Kirim surel kepada pengguna untuk memberi tahu tentang undangan, langkah selanjutnya, kebijakan privasi jurnal, dan verifikasi ORCID."
+
+msgid "userInvitation.modal.message"
+msgstr "Undangan untuk mengambil peran baru di OJS telah dikirim kepada {$email}. Anda dapat memantau keputusan pengguna melalui halaman Pengguna & Peran, notifikasi OJS, dan/atau surel Anda."
