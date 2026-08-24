@@ -132,3 +132,6 @@ msgstr "{$step} - Tinjau dan sesuaikan surel undangan"
 
 msgid "invitation.cancelInvite.message"
 msgstr "Membatalkan undangan yang dikirim kepada {$givenName} {$familyName} akan menonaktifkan tautan penerimaan yang dikirim melalui surel. Berikut detail undangannya:"
+
+msgid "userInvitation.edit.message"
+msgstr "Jika Anda mengubah undangan yang ada atau menambahkan peran baru, undangan saat ini akan dibatalkan dan undangan baru akan dikirim. Apakah Anda yakin ingin melanjutkan?"
