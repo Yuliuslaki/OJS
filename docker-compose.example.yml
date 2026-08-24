@@ -49,9 +49,14 @@ services:
       - ./ojs-runtime-public:/var/www/public
       - ./ojs-files:/var/www/files
       - ./ojs-public:/var/www/html/public
+      - ./pkp-locale/id/invitation.po:/var/www/html/lib/pkp/locale/id/invitation.po:ro
+      - ./pkp-locale/id/userAccess.po:/var/www/html/lib/pkp/locale/id/userAccess.po:ro
+      - ./pkp-locale/id/emails.po:/var/www/html/lib/pkp/locale/id/emails.po:ro
+      - ./ojs-locale/id/invitation.po:/var/www/html/locale/id/invitation.po:ro
       - ./php-ini/custom.ini:/usr/local/etc/php/conf.d/custom.ini:ro
       - ./ojs-theme/default/DefaultThemePlugin.php:/var/www/html/plugins/themes/default/DefaultThemePlugin.php:ro
       - ./ojs-theme/default/styles/custom.css:/var/www/html/plugins/themes/default/styles/custom.css:ro
+      - ./ojs-plugins/scienticoAdminMobile:/var/www/html/plugins/generic/scienticoAdminMobile:ro
       - ./config.inc.php:/var/www/html/config.inc.php:ro
       - ./.htaccess:/var/www/html/.htaccess:ro
       - ./apache/headers.load:/etc/apache2/mods-enabled/headers.load:ro
