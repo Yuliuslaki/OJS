@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-PROJECT_DIR="${PROJECT_DIR:-$HOME/ojs-docker}"
+PROJECT_DIR="${PROJECT_DIR:-$HOME/ojs-sco-local}"
 BACKUP_ROOT="${BACKUP_ROOT:-$HOME/ojs-private-backups}"
 BACKUP_DIR="${1:-}"
 

@@ -70,7 +70,7 @@ class ScienticoAdminMobilePlugin extends GenericPlugin
 
         $templateManager->addStyleSheet(
             'scienticoAdminMobile',
-            $pluginUrl . '/styles/admin-mobile.css?v=1.2.0',
+            $pluginUrl . '/styles/admin-mobile.css?v=1.3.0',
             [
                 'contexts' => ['backend'],
                 'priority' => 20,
@@ -79,7 +79,7 @@ class ScienticoAdminMobilePlugin extends GenericPlugin
 
         $templateManager->addJavaScript(
             'scienticoAdminMobile',
-            $pluginUrl . '/js/admin-mobile.js?v=1.2.0',
+            $pluginUrl . '/js/admin-mobile.js?v=1.3.0',
             [
                 'inline' => false,
                 'contexts' => ['backend'],
