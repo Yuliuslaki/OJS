@@ -26,3 +26,36 @@ msgstr "Kirim surel kepada pengguna untuk memberi tahu tentang undangan, langkah
 
 msgid "userInvitation.modal.message"
 msgstr "Undangan untuk mengambil peran baru di OJS telah dikirim kepada {$email}. Anda dapat memantau keputusan pengguna melalui halaman Pengguna & Peran, notifikasi OJS, dan/atau surel Anda."
+
+msgid "acceptInvitation.accountDetails.stepDescription"
+msgstr "Untuk mulai menggunakan OJS dan menerima peran baru, Anda perlu membuat akun. Silakan masukkan nama pengguna dan kata sandi."
+
+msgid "acceptInvitation.accountDetails.stepLabel"
+msgstr "{$step} - Buat akun OJS"
+
+msgid "acceptInvitation.accountDetails.stepName"
+msgstr "Buat akun OJS"
+
+msgid "acceptInvitation.detailsReview.nextButtonLabel"
+msgstr "Terima dan Lanjutkan ke OJS"
+
+msgid "acceptInvitation.detailsReview.stepDescription"
+msgstr "Tinjau detail untuk mulai menggunakan peran baru Anda di OJS."
+
+msgid "acceptInvitation.modal.message"
+msgstr "Selamat atas peran baru Anda di OJS! Anda mungkin sekarang memiliki akses ke opsi baru. Jika memerlukan bantuan untuk memahami sistem, klik tombol “Bantuan” yang tersedia di dalam sistem."
+
+msgid "acceptInvitation.modal.title"
+msgstr "Anda Telah Diberi Peran Baru di OJS"
+
+msgid "acceptInvitation.verifyOrcid.stepDescription"
+msgstr "Anda dapat memilih untuk memverifikasi ORCID iD atau melewatinya. Jika dilewati sekarang, Anda dapat memverifikasi ORCID iD nanti melalui bagian profil di OJS."
+
+msgid "invitation.orcid.acceptInvitation.message"
+msgstr "Belum diverifikasi. Anda dapat memverifikasi ORCID iD melalui bagian profil di OJS."
+
+msgid "invitation.wizard.pageTitleDescription"
+msgstr "Anda mengundang pengguna untuk mengambil peran di OJS dan ditampilkan pada masthead jurnal."
+
+msgid "userInvitation.searchUser.stepDescription"
+msgstr "Cari pengguna menggunakan alamat surel, nama pengguna, atau ORCID iD. Masukkan setidaknya satu data untuk memulai. Jika pengguna belum ada, Anda dapat mengundangnya untuk mengambil peran dan menjadi bagian dari jurnal. Jika pengguna sudah ada di sistem, Anda dapat melihat informasinya dan mengundangnya untuk mengambil peran tambahan."
