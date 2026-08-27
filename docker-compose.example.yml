@@ -66,5 +66,12 @@ services:
       - ./apache/headers.load:/etc/apache2/mods-enabled/headers.load:ro
       - ./apache/security.conf:/etc/apache2/conf-enabled/zz-ojs-security.conf:ro
 
+  mailpit:
+    image: axllent/mailpit:v1.31.0
+    container_name: ojs-sco-local-mailpit
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8025:8025"
+
 volumes:
   db-data:

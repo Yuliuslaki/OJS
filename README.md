@@ -124,6 +124,7 @@ Docker Compose digunakan untuk menjalankan:
 
 - container aplikasi OJS;
 - container database MariaDB;
+- container Mailpit untuk menangkap surel lokal;
 - volume database;
 - file publik OJS;
 - konfigurasi Apache;
@@ -443,6 +444,18 @@ START-SCO.cmd
 ```
 
 File tersebut digunakan untuk menjalankan container OJS melalui perintah yang telah disiapkan.
+
+---
+
+## Pengujian Surel Lokal dengan Mailpit
+
+Konfigurasi contoh menggunakan Mailpit sebagai server SMTP lokal. Semua surel dari OJS akan ditangkap oleh Mailpit dan tidak dikirim ke internet.
+
+Setelah seluruh container berjalan, buka kotak masuk Mailpit melalui `http://127.0.0.1:8025`.
+
+Alamat surel pengujian tidak harus berupa alamat asli, misalnya `editor.test@example.com` dan `reviewer.test@example.com`.
+
+Mailpit hanya digunakan untuk pengembangan dan pengujian lokal. Untuk server produksi, ganti konfigurasi SMTP pada `config.inc.php` dengan layanan SMTP yang sebenarnya dan jangan menyimpan username atau password SMTP ke repository.
 
 ---
 
