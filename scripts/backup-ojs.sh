@@ -3,6 +3,7 @@ set -Eeuo pipefail
 
 PROJECT_DIR="${PROJECT_DIR:-$HOME/ojs-sco-local}"
 BACKUP_ROOT="${BACKUP_ROOT:-$HOME/ojs-private-backups}"
+OJS_URL="${OJS_URL:-http://127.0.0.1:8081/SCO/id}"
 TIMESTAMP="$(date +%Y%m%d-%H%M%S)"
 BACKUP_DIR="$BACKUP_ROOT/full-backup-$TIMESTAMP"
 COOKIE_FILE="$(mktemp)"
@@ -94,8 +95,8 @@ echo "Memeriksa Docker Compose..."
 docker compose config --quiet
 
 echo "Memeriksa status database..."
-if ! docker compose ps --status running db |
-    grep -q 'ojs-sco-db'; then
+if ! docker compose ps --status running --services |
+    grep -qx 'db'; then
     echo "GAGAL: container database tidak berjalan."
     exit 1
 fi
@@ -150,6 +151,10 @@ ITEMS=(
     "ojs-public"
     "ojs-runtime-public"
     "ojs-theme"
+    "pkp-locale"
+    "ojs-locale"
+    "ojs-plugins"
+    "pkp-classes"
     "apache"
     "php-ini"
     ".htaccess"
@@ -214,7 +219,7 @@ curl -sS \
     --max-redirs 10 \
     -o /dev/null \
     -w "OJS HTTP %{http_code}\n" \
-    http://localhost:8080/SCO/id |
+    "$OJS_URL" |
     grep -q 'OJS HTTP 200'
 
 echo "OJS HTTP 200"
