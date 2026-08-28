@@ -87,6 +87,16 @@ class ScienticoAdminMobilePlugin extends GenericPlugin
             ]
         );
 
+        $templateManager->addJavaScript(
+            'scienticoComposerTemplatePreview',
+            $pluginUrl . '/js/composer-template-preview.js?v=1.0.0',
+            [
+                'inline' => false,
+                'contexts' => ['backend'],
+                'priority' => 21,
+            ]
+        );
+
         return false;
     }
 }
